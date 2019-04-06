@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/dietlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dietaciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Günlük enerji alımınıza özen gösterin. Enerjinin fazla alınması şişmanlığa, az alınması zayıflığa, yetersiz beslenmeye neden olur. Bunun için yediğiniz besinlerin miktarlarını ve hareketlerinizi gözden geçirin.
+Düzenli beslenin. Günlük beslenmenizi ortalama 4–6 öğün olacak şekilde planlayın. Üçten az sayıda öğün yetersiz beslenmenize, altıdan fazla öğün ise sık atıştırmalar nedeniyle şişmanlığa yol açabilir.
+Günde 2–3 litre (10–15 su bardağı) sıvı tüketmeye gayret edin. Bunun için su, yeşil-siyah çay, ıhlamur, kuşburnu, ada çayı, karışık çay, sütlü neskafe, sıcak-soğuk limonata, ayran, kefir, soda, boza, salep, çorba, şalgam vb. içecekler tüketilebilir."
+            app:layout_constraintTop_toBottomOf="@id/baslik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/baslik"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Sağlıklı Olmak İçin 5 İpucu"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>
